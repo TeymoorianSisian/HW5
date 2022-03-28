@@ -14,7 +14,7 @@ newsapi = NewsApiClient(api_key='fa902e51b3294bd380a97c53aebb3cf6')
 articles =[]
 
 for pagina in range(5):
-    temp = newsapi.get_everything(q='coronavirus',language='en',from_param='2022-03-01',to='2022-01-20',
+    temp = newsapi.get_everything(q='coronavirus',language='en',from_param='2022-03-01',to='2022-03-20',
                                   sort_by='relevancy',page=pagina+1)
     articles.append(temp)
 
